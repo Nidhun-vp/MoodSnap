@@ -14,7 +14,7 @@ export default function Home() {
     try {
       const res = await axios.post(
         // "http://localhost:5000/api/auth/login",
-        "https://moodsnap-1.onrender.com/login",
+        "https://moodsnap-1.onrender.com/api/auth/login",
         {
           username,
           role,
