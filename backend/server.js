@@ -7,10 +7,8 @@ const app = express();
 
 import cors from "cors";
 
-app.use(cors({
-  origin: "https://mood-snap-five.vercel.app/",
-  credentials: true
-}));
+
+app.use(cors());
 
 app.use(express.json());
 
