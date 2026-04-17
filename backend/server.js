@@ -5,7 +5,13 @@ require("dotenv").config();
 
 const app = express();
 
-app.use(cors());
+import cors from "cors";
+
+app.use(cors({
+  origin: "https://mood-snap-five.vercel.app/",
+  credentials: true
+}));
+
 app.use(express.json());
 
 mongoose.connect(process.env.MONGO_URI)
